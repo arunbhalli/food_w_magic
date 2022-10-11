@@ -5,14 +5,18 @@
     font-size: 25px;
 };
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
 
-  .fa-map-marker{
+.fa-map-marker{
     color: red
-  }
+}
+
+
+a {
+    text-decoration: none;
+}
+  
+a:hover {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}

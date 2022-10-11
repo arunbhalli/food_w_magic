@@ -39,7 +39,7 @@
   <!-- Map -->
   <div style="text-align: center;">
     <button onclick="showMap()">Show on Map</button>
-    <center id="map" style="display:none;">
+    <center id="map" class="d-none">
       <h1 style="color:black;">
         Food with Magic
       </h1>
@@ -50,6 +50,7 @@
           width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+      <button onclick="showMap()">Hide Map</button>
     </center>
   </div>
 
@@ -92,7 +93,7 @@
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
               <!-- logo -->
-              <img src="/images/logo.png" style="max-width:100%;">
+              <a href="#navbar"><img src="/images/logo.png" style="max-width:100%;"></a>
             </div>
 
             <!-- Grid column -->
@@ -108,7 +109,7 @@
             <div class="col-md-3 col-lg-2 col-xl-1 mx-auto mb-4 mt-4">
               <!-- Links -->
               <h6 class="text-uppercase fw-bold mb-4">
-                About
+                <a style="text-decoration: none;" href="#about" >About</a>
               </h6>
             </div>
             <!-- Grid column -->
@@ -127,7 +128,12 @@
                 <i class="fa fa-envelope me-3"></i>
                 info@foodwithmagic.se
               </p>
-              <p><i class="fa fa-home me-3"></i> <i class="fa fa-map-marker"></i> Årstaängsvägen 9 Stockholm SE</p>
+              <p onclick=showMap()>
+                <i class="fa fa-home me-3"></i>
+                <a href="#map"><i class="fa fa-map-marker"></i>
+                </a>
+                Årstaängsvägen 9 Stockholm
+              </p>
 
             </div>
             <!-- Grid column -->

@@ -2,5 +2,5 @@
 
 function showMap()
 {
-    $("#map").css("display", "block");
+    $("#map").toggleClass("d-none", "d-block");
 }
