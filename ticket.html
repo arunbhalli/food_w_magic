@@ -18,10 +18,10 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link href="/ticket.css" type="text/css" rel="stylesheet">
   <link href="/index.css" type="text/css" rel="stylesheet">
-
 </head>
 
 <body>
+  <!-- nav bar -->
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light">
       <div class="container-fluid">
@@ -52,40 +52,43 @@
       </div>
     </nav>
   </div>
+  <!-- Form for ticket booking -->
   <div class="row">
     <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">First Name</label>
+      <label class="form-label">First Name</label>
       <input type="text" class="form-control" placeholder="First name" aria-label="First name">
     </div>
     <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Last Name</label></label>
+      <label class="form-label">Last Name</label></label>
       <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <label class="form-label">Email</label>
+      <input type="email" class="form-control" placeholder="Email" aria-label="First name">
+    </div>
+    <div class="col">
+      <label class="form-label">Phone</label>
+      <input type="text" class="form-control" placeholder="Phone" aria-label="Phone">
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Email</label>
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      <label class="form-label">Date</label>
+      <input type="date" class="form-control" placeholder="YYYY-MM-DD" aria-label="First name">
     </div>
     <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Phone</label>
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Date</label>
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-    </div>
-    <div class="col">
-      <label for="exampleFormControlTextarea1" class="form-label">Number of people</label>
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      <label class="form-label">Number of people</label>
+      <input type="number" class="form-control" placeholder="Number of people" aria-label="Number of people">
     </div>
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <label class="form-label">Message</label>
+    <textarea class="form-control" placeholder="Write your message here " rows="3"></textarea>
   </div>
+
 </body>
 
 </html>
