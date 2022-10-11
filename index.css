@@ -1,6 +1,25 @@
 /* main css file  */
 
 
+* {
+  box-sizing: border-box;
+}
+.nav-link {
+  color: black;
+}
+
+.btn {
+  background-color: #fedc01;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+.about {
+  border-radius: 50%;
+
 #social_icons img, a{ 
     text-decoration: none;
     font-size: 25px;
