@@ -1,45 +1,57 @@
 /* main css file  */
 
-
-#social_icons img, a{ 
-    text-decoration: none;
-    font-size: 25px;
-};
-
-a{
-    text-decoration: none;
-    color: red;
+* {
+  box-sizing: border-box;
+}
+.nav-link {
+  color: black;
 }
 
-.fa-map-marker{
-    color: red
+.btn {
+  background-color: #fedc01;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
-  
-a:hover {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
+.about {
+  border-radius: 50%;
 }
+#social_icons img,
+a.icon {
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.fa-map-marker {
+  color: red;
+}
+
 
 .nav-link {
-    color: black;
-    border-radius: 10px;
+  color: black;
+  border-radius: 10px;
 }
 
 .active {
-    background-color: #fedc01;
-    font-weight: bold;
+  background-color: #fedc01;
+  font-weight: bold;
 }
 
-.navbar-nav>li {
-    padding-left: 20px;
-    padding-right: 20px;
+.navbar-nav > li {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.navbar-nav>li>a:hover {
-    color: black;
-    font-weight: bold;
-    background-color: #fedc01;
+.navbar-nav > li > a:hover {
+  color: black;
+  font-weight: bold;
+  background-color: #fedc01;
 }
 
+.text-secondary{
+    text-decoration: none;
+}
