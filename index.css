@@ -16,7 +16,6 @@
   font-weight: bold;
 }
 
-
 #social_icons img,
 a {
   text-decoration: none;
@@ -59,3 +58,11 @@ a:hover {
   background-color: #fedc01;
 }
 
+.add:hover {
+  transform: scale(1.009);
+  box-shadow: 5px 4px 5px #ccccc9;
+}
+
+.first:hover {
+
+}
