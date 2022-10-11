@@ -1,5 +1,5 @@
 .mb-3 {
-  margin-right: 59%;
+  margin-right: 61%;
   margin-left: 5%;
   margin-top: 5%;
   /* margin-bottom: 50%;
@@ -7,6 +7,9 @@
 }
 .row {
   margin-top: 2%;
-  margin-right: 20%;
+  margin-right: 25%;
   margin-left: 4%;
+}
+body {
+  background-color: #E5E0ED;
 }
