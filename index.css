@@ -1,5 +1,6 @@
 /* main css file  */
 
+
 #social_icons img, a{ 
     text-decoration: none;
     font-size: 25px;
@@ -20,3 +21,25 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
+.nav-link {
+    color: black;
+    border-radius: 10px;
+}
+
+.active {
+    background-color: #fedc01;
+    font-weight: bold;
+}
+
+.navbar-nav>li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-nav>li>a:hover {
+    color: black;
+    font-weight: bold;
+    background-color: #fedc01;
+}
+
