@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #faf6f5;
+}
 .nav-link {
   color: black;
 }
