@@ -58,19 +58,6 @@ a.icon {
   text-decoration: none;
 }
 
-.main {
-  height: 100%;
-}
-
-.bg {
-  background-color: #fedc01;
-  background-size: 200px;
-  width: 200px;
-  height: 100%;
-  float: right;
-  border-radius: 20px;
-  margin-right: 30px;
-}
 .add:hover {
   transform: scale(1.009);
   box-shadow: 5px 4px 5px #ccccc9;
@@ -99,4 +86,29 @@ a.icon {
   height: 180px;
   width: 180px;
   left: -153px;
+}
+
+.menuborder {
+  width: 500px;
+  height: 80px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #fedc01;
+  text-align: center;
+}
+
+.menutitle {
+  font-size: 36pt;
+}
+
+.add {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.subtract {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 10px;
 }
