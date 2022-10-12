@@ -14,14 +14,14 @@
   margin-left: 5%;
 }
 #total {
-  margin-left: 32%;
+  margin-left: 30%;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 30px;
 }
 .right-box {
   position: absolute;
   background-color: #fedc01;
-  height: 120%;
+  height: 110vh;
   margin-left: 80%;
   width: 20%;
   z-index: -1;
