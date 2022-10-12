@@ -60,7 +60,7 @@ a.icon {
 
 .add:hover {
   transform: scale(1.009);
-  box-shadow: 5px 4px 5px #ccccc9;
+  box-shadow: 1px 2px 2px #ccccc9;
 }
 
 .show-header {
@@ -111,4 +111,8 @@ a.icon {
   font-weight: bold;
   font-size: 16pt;
   padding-left: 10px;
+}
+
+.carousel-item {
+  min-height: 280px;
 }
