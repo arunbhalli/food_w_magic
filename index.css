@@ -93,11 +93,10 @@ a.icon {
   right: -7px;
 }
 
-.bowl {
+.inner {
   position: relative;
   display: flex;
-  float: right;
-  width: auto;
-  height: 200px;
-  left: 290px;
+  height: 180px;
+  width: 180px;
+  left: -153px;
 }
