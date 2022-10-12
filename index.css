@@ -66,3 +66,25 @@ a:hover {
 .show-header {
   text-align: center;
 }
+
+.sign {
+  display: flex;
+  background-color: #fedc01;
+  height: 2000px;
+  position: absolute;
+  width: 160px;
+  z-index: -1;
+  padding-top: 40px;
+  border-radius: 15px;
+  float: right;
+  right: -7px;
+}
+
+.bowl {
+  position: relative;
+  display: flex;
+  float: right;
+  width: auto;
+  height: 200px;
+  left: 290px;
+}
