@@ -1,8 +1,13 @@
 /* main css file  */
+body {
+  height: 100vh;
+  background-color: #faf6f5;
+}
 
 * {
   box-sizing: border-box;
 }
+
 .nav-link {
   color: black;
 }
@@ -54,4 +59,48 @@ a.icon {
 
 .text-secondary{
     text-decoration: none;
+}
+
+.main {
+  height: 100%;
+}
+
+.bg {
+  background-color: #fedc01;
+  background-size: 200px;
+  width: 200px;
+  height: 100%;
+  float: right;
+  border-radius: 20px;
+  margin-right: 30px;
+}
+.add:hover {
+  transform: scale(1.009);
+  box-shadow: 5px 4px 5px #ccccc9;
+}
+
+.show-header {
+  text-align: center;
+}
+
+.sign {
+  display: flex;
+  background-color: #fedc01;
+  height: 2000px;
+  position: absolute;
+  width: 160px;
+  z-index: -1;
+  padding-top: 40px;
+  border-radius: 15px;
+  float: right;
+  right: -7px;
+}
+
+.bowl {
+  position: relative;
+  display: flex;
+  float: right;
+  width: auto;
+  height: 200px;
+  left: 290px;
 }

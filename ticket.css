@@ -1,0 +1,53 @@
+.mb-3 {
+  margin-right: 61%;
+  margin-left: 5%;
+  margin-top: 5%;
+  /* margin-bottom: 50%;
+  margin-top: 50%; */
+}
+.row {
+  margin-top: 2%;
+  margin-right: 25%;
+  margin-left: 4%;
+}
+body {
+  background-color: #e5e0ed;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.col-3 {
+  margin-left: 0px;
+}
+.button {
+  margin-left: 35%;
+  background-color: #fedc01;
+  font-size: 35px;
+  height: 80px;
+  width: 220px;
+  border-radius: 10px;
+  text-decoration: none;
+  border-color: none;
+}
+#total {
+  margin-left: 32%;
+  font-weight: bold;
+  font-size: 40px;
+}
+.right-box {
+  position: absolute;
+  margin-top: 2%;
+  background-color: #fedc01;
+  height: 60%;
+  margin-left: 78%;
+  width: 20vh;
+  z-index: -1;
+  border-radius: 15px;
+  padding: 0;
+  border: none;
+}
