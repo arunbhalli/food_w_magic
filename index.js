@@ -8,4 +8,7 @@ $(document).ready(function () {
     $(".navbar").find(".active").removeClass("active");
     $(this).addClass("active");
   });
+  $(".add .carousel").carousel({
+    interval: 1200,
+  });
 });
