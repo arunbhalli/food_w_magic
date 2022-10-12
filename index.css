@@ -1,13 +1,11 @@
 /* main css file  */
+* {
+  box-sizing: border-box;
+}
 body {
   height: 100vh;
   background-color: #faf6f5;
 }
-
-* {
-  box-sizing: border-box;
-}
-
 .nav-link {
   color: black;
 }
@@ -35,7 +33,6 @@ a.icon {
   color: red;
 }
 
-
 .nav-link {
   color: black;
   border-radius: 10px;
@@ -57,8 +54,8 @@ a.icon {
   background-color: #fedc01;
 }
 
-.text-secondary{
-    text-decoration: none;
+.text-secondary {
+  text-decoration: none;
 }
 
 .main {
