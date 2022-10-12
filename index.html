@@ -37,47 +37,36 @@
     />
   </head>
 
-  <body>
-    
-    <!-- header -->
-    <div>
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="images/logo.png" style="max-width: 70%"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon bg-light"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="menu.html">Menu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ticket.html">Tickets</a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <!-- header -->
+  <div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="max-width:70%;" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ticket.html">Tickets</a>
+            </li>
+          </ul>
+
         </div>
       </nav>
     </div>
@@ -229,7 +218,7 @@
         </div>
         <!-- About -->
         <div class="container">
-          <h3 class="mt-5">About Food with Magic</h3>
+          <h3 id="about" class="mt-5">About Food with Magic</h3>
           <div class="row">
             <h5 class="pt-3">How it started</h5>
             <p>
@@ -305,130 +294,108 @@
         </div>
         <br />
         <br />
-      </div>
-
-      <div>
-        <button class="btn">SHOW ON MAP</button>
-      </div>
-    </div>
-    <!-- Map -->
-    <div style="text-align: center">
-      <button onclick="showMap()">Show on Map</button>
-      <center id="map" class="d-none">
-        <h1 style="color: black">Food with Magic</h1>
-        <div>
-          <!-- Google Map Code -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.3121644860273!2d18.030042400000003!3d59.311044200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77c7003371d9%3A0xb5391fbee7ab86a4!2zw4Vyc3Rhw6RuZ3N2w6RnZW4gOSwgMTE3IDQzIFN0b2NraG9sbQ!5e0!3m2!1sen!2sse!4v1665482506926!5m2!1sen!2sse"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        
         </div>
-      </center>
-    </div>
+        <!-- Map -->
+        <div style="text-align: center;">
+          <button class="btn" onclick="showMap()">Show on Map</button>
+          <center id="map" class="d-none">
+            <div>
+              <!-- Google Map Code -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2036.3121644860273!2d18.030042400000003!3d59.311044200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77c7003371d9%3A0xb5391fbee7ab86a4!2zw4Vyc3Rhw6RuZ3N2w6RnZW4gOSwgMTE3IDQzIFN0b2NraG9sbQ!5e0!3m2!1sen!2sse!4v1665482506926!5m2!1sen!2sse"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </center>
+        </div>
 
-    <!-- Footer -->
-    <div>
-      <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section
-          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-        >
-          <!-- Left -->
-          <div class="me-5 d-none d-lg-block">
-            <span>Get connected with us on social networks:</span>
-          </div>
-          <!-- Left -->
+        <!-- Footer -->
+        <div>
+          <footer id="footer" class="text-center text-lg-start bg-light text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between px-4 py-lg-3 py-md-2 py-sm-1 border-bottom">
+              <!-- Left -->
+              <div class="me-5 d-none d-lg-block py-1">
+                <span>Get connected with us on social networks:</span>
+              </div>
+              <!-- Left -->
 
-          <!-- Right -->
-          <div>
-            <a
-              href="https://www.instagram.com/visitstockholm/"
-              class="me-4 text-reset"
-            >
-              <i class="fa fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/visitstockholm/"
-              class="me-4 text-reset"
-            >
-              <i class="fa fa-facebook-f"></i>
-            </a>
-            <a
-              href="https://www.visitstockholm.com/travel-info/handy-apps/"
-              class="me-4 text-reset"
-            >
-              <i class="fa fa-google-plus"></i>
-            </a>
-            <a
-              href="https://twitter.com/visitstockholm"
-              class="me-4 text-reset"
-            >
-              <i class="fa fa-twitter"></i>
-            </a>
+              <!-- Right -->
+              <div>
+                <a href="https://www.instagram.com/visitstockholm/" class="me-4 text-reset icon">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/visitstockholm/" class="me-4 text-reset icon">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+                <a href="https://www.visitstockholm.com/travel-info/handy-apps/" class="me-4 text-reset icon">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+                <a href="https://twitter.com/visitstockholm" class="me-4 text-reset icon">
+                  <i class="fa fa-twitter"></i>
+                </a>
           </div>
           <!-- Right -->
         </section>
         <!-- Section: Social media -->
 
-        <!-- Section: Links  -->
-        <section class="" style="background-color: rgba(0, 0, 0, 0.05)">
-          <div class="container text-center text-md-start">
-            <!-- Grid row -->
-            <div class="row">
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
-                <!-- logo -->
-                <a href="#navbar"
-                  ><img
-                    src="/food_w_magic/images/logo.png"
-                    style="max-width: 100%"
-                /></a>
-              </div>
+            <!-- Section: Links  -->
+            <section class="" style="background-color: rgba(0, 0, 0, 0.05);">
+              <div class="container text-center text-md-start">
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
+                    <!-- logo -->
+                    <a href="#navbar"><img src="./images/logo.png" style="max-width:100%;"></a>
+                  </div>
 
-              <!-- Grid column -->
-              <div class="col-md-2 col-lg-2 col-xl-1 mx-auto mb-4 mt-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Home</h6>
-              </div>
-              <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">
+                      <a href="#navbar" class="text-secondary text-capitalize">Home</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
 
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-1 mx-auto mb-4 mt-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">
-                  <a href="#about">About</a>
-                </h6>
-              </div>
-              <!-- Grid column -->
-              <div class="col-md-3 col-lg-2 col-xl-1 mx-auto mb-4 mt-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Menu</h6>
-              </div>
-              <!-- Grid column -->
-              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-4">
-                <!-- Links -->
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p><i class="fa fa-phone me-3"></i> + 46 73 123 45 67</p>
-                <p>
-                  <i class="fa fa-envelope me-3"></i>
-                  info@foodwithmagic.se
-                </p>
-                <p onclick="showMap()">
-                  <i class="fa fa-home me-3"></i>
-                  <a style="text-decoration: none" href="#map"
-                    ><i class="fa fa-map-marker"></i>
-                  </a>
-                  Årstaängsvägen 9 Stockholm
-                </p>
-              </div>
-              <!-- Grid column -->
-            </div>
-            <!-- Grid row -->
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">
+                      <a href="#about" class="text-secondary text-capitalize">About</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">
+                      <a href="/menu.html" class="text-secondary text-capitalize">Menu</a>
+                    </h6>
+                  </div>
+                  <!-- Grid column -->
+                  <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold ">
+                      <a href="#footer" class="text-secondary text-capitalize ">Contact</a>
+                    </h6>
+                    <p class="my-md-1"><i class="fa fa-phone me-3"></i> + 46 73 123 45 67</p>
+                    <p class="my-md-1">
+                      <i class="fa fa-envelope me-3"></i>
+                      info@foodwithmagic.se
+                    </p>
+                    <p class="my-md-1" onclick=showMap()>
+                      <i class="fa fa-home me-3"></i>
+                      <a style="text-decoration: none;" href="#map"><i class="fa fa-map-marker"></i>
+                      </a>
+                      Årstaängsvägen 9 Stockholm
+                    </p>
+
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
           </div>
         </section>
         <!-- Section: Links  -->
