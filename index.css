@@ -54,6 +54,10 @@ a.icon {
   background-color: #fedc01;
 }
 
+.text-secondary {
+  text-decoration: none;
+}
+
 .add:hover {
   transform: scale(1.009);
   box-shadow: 5px 4px 5px #ccccc9;
