@@ -25,13 +25,12 @@
 }
 .right-box {
   position: absolute;
-  margin-top: 1%;
   background-color: #fedc01;
-  height: 92%;
+  height: 118%;
   margin-left: 50%;
   width: 18%;
   z-index: -1;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 0;
   border: none;
 }
