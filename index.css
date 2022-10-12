@@ -1,7 +1,10 @@
 /* main css file  */
-
 * {
   box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #faf6f5;
 }
 .nav-link {
   color: black;
@@ -9,10 +12,11 @@
 
 .btn {
   background-color: #fedc01;
-  width: 500px;
+  width: 300px;
   display: flex;
   justify-content: center;
   margin: auto;
+  margin-bottom: 15px;
   font-weight: bold;
 }
 
@@ -20,24 +24,13 @@
   border-radius: 50%;
 }
 #social_icons img,
-a {
+a.icon {
   text-decoration: none;
   font-size: 25px;
 }
 
-a {
-  text-decoration: none;
-  color: red;
-}
-
 .fa-map-marker {
   color: red;
-}
-
-a:hover {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 .nav-link {
@@ -61,3 +54,61 @@ a:hover {
   background-color: #fedc01;
 }
 
+.text-secondary {
+  text-decoration: none;
+}
+
+.add:hover {
+  transform: scale(1.009);
+  box-shadow: 5px 4px 5px #ccccc9;
+}
+
+.show-header {
+  text-align: center;
+}
+
+.sign {
+  display: flex;
+  background-color: #fedc01;
+  height: 2000px;
+  position: absolute;
+  width: 160px;
+  z-index: -1;
+  padding-top: 40px;
+  border-radius: 15px;
+  float: right;
+  right: -7px;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  height: 180px;
+  width: 180px;
+  left: -153px;
+}
+
+.menuborder {
+  width: 500px;
+  height: 80px;
+  border-radius: 0px 8px 8px 0px;
+  background-color: #fedc01;
+  text-align: center;
+}
+
+.menutitle {
+  font-size: 36pt;
+}
+
+.add {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.subtract {
+  font-weight: bold;
+  font-size: 16pt;
+  padding-left: 10px;
+}

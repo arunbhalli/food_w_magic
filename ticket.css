@@ -1,0 +1,40 @@
+.button {
+  margin-left: 35%;
+  background-color: #fedc01;
+  font-size: 35px;
+  height: 80px;
+  width: 220px;
+  border-radius: 10px;
+  text-decoration: none;
+  border-color: none;
+  margin-bottom: 20%;
+}
+#form {
+  margin-right: 25%;
+  margin-left: 5%;
+}
+#total {
+  margin-left: 32%;
+  font-weight: bold;
+  font-size: 40px;
+}
+.right-box {
+  position: absolute;
+  background-color: #fedc01;
+  height: 120%;
+  margin-left: 80%;
+  width: 20%;
+  z-index: -1;
+  border-radius: 20px;
+  padding: 0;
+  border: none;
+}
+.title {
+  text-align: center;
+  background-color: #fedc01;
+  border-radius: 15px;
+  margin-right: 50%;
+}
+.form-label {
+  margin-top: 20%;
+}
