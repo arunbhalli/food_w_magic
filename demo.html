@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>ticket</title>
+  <title>Home page</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -59,11 +59,13 @@
   </div>
   <div>
     <!-- header1 -->
-    <div class="title"><span class="menutitle">Your Tickets</span></div>
-    <div class="right-box">
-    </div>
-    <div class="container">
-      <div id="form">
+    <div id="form" >
+      <div class="container row mt-4 col-md">
+        <div class="right-box">
+        </div>
+        <div class="title">
+          <h1>Booking</h1>
+        </div>
         <div class="row">
           <div class="col">
             <label class="form-label">First Name</label>
@@ -92,7 +94,6 @@
           <div class="col">
             <label class="form-label">Number of people</label>
             <select name="people" class="form-control">
-              <option value="0">0</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -218,6 +219,8 @@
         <!-- Copyright -->
       </footer>
     </div>
+
+    <p id="demo">Total amount:$</p>
     <script>
       $(document).ready(function () {
         $("select.form-control").change(function () {
@@ -227,5 +230,4 @@
       });
     </script>
 </body>
-
 </html>
