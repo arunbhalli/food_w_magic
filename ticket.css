@@ -38,3 +38,16 @@
 .form-label {
   margin-top: 20%;
 }
+@media only screen and (max-width: 820px) {
+  .right-box {
+    position: absolute;
+    background-color: #fedc01;
+    height: 70vh;
+    margin-left: 80%;
+    width: 20%;
+    z-index: -1;
+    border-radius: 20px;
+    padding: 0;
+    border: none;
+  }
+}
