@@ -5,8 +5,8 @@ function showMap() {
 
 $(document).ready(function () {
   $(".navbar .nav-link").on("click", function () {
-    $(".navbar").find(".active-item").removeClass("active-item");
-    $(this).addClass("active-item");
+    $(".navbar").find(".active").removeClass("active");
+    $(this).addClass("active");
   });
   $(".add .carousel").carousel({
     interval: 1200,
