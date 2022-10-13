@@ -15,23 +15,34 @@ $(document).ready(function () {
 
 /*********************Comment functionality START *************************/
 
- $(document).ready(function () {
-   $(".yo").click(function () {
-     var name = $("#name").val();
-     var date = new Date();
-     const hoursAndMinutes =
-       padTo2Digits(date.getHours()) + ":" + padTo2Digits(date.getMinutes());
-     var comment = $("#texta").val();
-     var line = document.createElement("hr");
-     $("#milk").append(
-       `<div class= mt-3><h4><i class="bi bi-person-fill"></i>&nbsp;${name}</h4><p><small>Commented at ${hoursAndMinutes} on ${date.toDateString()}</small></p><hr>${comment}`
-     );
-     $("#name,#texta").val("");
-   });
- });
- function padTo2Digits(num) {
-   return String(num).padStart(2, "0");
- }
+  $(document).ready(function () {
+    var lista = [];
+    $("select#emojis").change(function () {
+      var emo = $(this).children("option:selected").val();
+      lista.push(emo);
+    });
+
+    $(".yo").click(function () {
+      var name = $("#name").val();
+      var date = new Date();
+      const hoursAndMinutes =
+        padTo2Digits(date.getHours()) + ":" + padTo2Digits(date.getMinutes());
+      var comment = $("#texta").val();
+      var line = document.createElement("hr");
+      var emo = $("select#emojis").children("option:selected").val();
+      $("#milk").append(
+        `<div class= mt-3><h4><i class="bi bi-person-fill"></i>&nbsp;${name}</h4><p><small>Commented at ${hoursAndMinutes} on ${date.toDateString()}</small></p><hr>${comment} ${lista.join(
+          ""
+        )}`
+      );
+      $("#name,#texta").val("");
+      lista = [];
+      $("select#emojis").val("");
+    });
+  });
+  function padTo2Digits(num) {
+    return String(num).padStart(2, "0");
+  }
 
 /*********************Comment Functionality  ENDS *************************/ 
 
