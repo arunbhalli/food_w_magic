@@ -132,3 +132,24 @@ a.icon {
 .so a:hover {
   color: inherit;
 }
+
+.sign_menu {
+  display: flex;
+  background-color: #fedc01;
+  height: 700px;
+  position: absolute;
+  width: 160px;
+  z-index: -1;
+  border-radius: 15px;
+  float: right;
+  right: 15px;
+  top: 100px;
+}
+
+.inner_menu {
+  position: relative;
+  display: flex;
+  height: 180px;
+  width: 180px;
+  left: -120px;
+}
