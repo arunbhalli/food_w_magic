@@ -43,10 +43,6 @@ a.icon {
   font-weight: bold;
 }
 
-.active-item {
-  background-color: #fedc01;
-}
-
 .navbar-nav > li {
   padding-left: 20px;
   padding-right: 20px;
@@ -156,4 +152,36 @@ a.icon {
   height: 180px;
   width: 180px;
   left: -120px;
+}
+
+.qty {
+  font-size: 120%;
+}
+.addsign {
+  font-weight: bold;
+}
+.fw-lighter {
+  margin-left: 10%;
+  margin-right: 20%;
+}
+.row {
+  text-align : center;
+}
+#titles{
+  text-align: center;
+}
+@media only screen and (max-width: 820px) {
+  .qty {
+    text-align: center;
+  }
+  .bi-plus-lg {
+    margin-left: 30%;
+  }
+  #titles{
+    text-align: center;
+  }
+  .fw-lighter {
+    margin-left: 2%;
+    margin-right: 0%;
+  }
 }
