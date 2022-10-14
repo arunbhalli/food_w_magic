@@ -1,349 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Home page</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- javascripts -->
-        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-          crossorigin="anonymous"></script>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-        <style>
-          @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@600;700&display=swap");
-        </style>
-        <script defer src="index.js"></script>
-        <!-- css stylesheets-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-        <link href="index.css" rel="stylesheet" />
-        <link href="ticket.css" type="text/css" rel="stylesheet">
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      </head>
+<head>
+  <title>Home page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- javascripts -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@600;700&display=swap");
+  </style>
+  <script defer src="index.js"></script>
+  <!-- css stylesheets-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link href="index.css" rel="stylesheet" />
+  <link href="ticket.css" type="text/css" rel="stylesheet">
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
 
 <body>
-    <!-- header -->
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="max-width:70%;" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bg-light"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#footer">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="ticket.html">Tickets</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!-- Menu content -->
-    <div>
-        <br />
-        <div class="menuborder"><span class="menutitle">Our Magic Menu</span></div>
-        <div class="sign_menu"><div class="inner_menu"><img src="./images/bowli.png" alt="bowl"></div></div>
-        <br />
-        <br />
-        <br />
-        <div id="menu" class="container fw-lighter">
-            <div class="row">
-                <div class="col-4 border-bottom border-2 border-dark">Starters</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4 border-bottom border-2 border-dark">Main courses</div>
-            </div>
-            <div class="row">
-                <div class="col-4">&nbsp;</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div id="item1" class="col-4 item">Crispy Chicken Wings............................<span class="price">225</span>kr<span class="addsign">+</span><span class="qty">0</span><span class="subtract">-</span></div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div id="item2" class="col-4 item">Mushrooms with Vegetables......................<span class="price">320</span>kr<span class="addsign">+</span><span class="qty">0</span><span class="subtract">-</span></div>
-            </div>
-            <div class="row">
-                <div class="col-4">Garlic Bread With Cheese...................... 140kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Chicken Sauce with garlic........................... 350kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Warm Goats Cheese .............................. 148kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Chicken/Lamb with Rice.............................. 199kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Fresh Potted Crab................................... 145kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Baked Steak with Pasta............................... 305kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Crispy Spring Roll.................................... 245kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Chicken in Lemon Sauce............................ 280kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Sandwich Of The Day............................. 100kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Slowly Cooked Pork Belly............................ 350kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Oriental Spare Ribs................................. 125kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Student Signature....................................... 350kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">&nbsp;</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-4">&nbsp;</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-4 border-bottom border-2 border-dark">Veggies</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4 border-bottom border-2 border-dark">Drinks</div>
-            </div>
-            <div class="row">
-                <div class="col-4">&nbsp;</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Spicy Bean Burger............................... 175kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">IPA Beer....................................................... 80kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Pasta Salad........................................... 135kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Soda Drinks................................................ 40kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Lasagne................................................ 180kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Fresh Juice................................................. 90kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Tofu Salad............................................. 200kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Non-alcholic............................................... 50kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Pepper Potatoes................................... 175kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Lemonade................................................. 90kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Olivas Rellenas...................................... 120kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Cappucino................................................. 45kr</div>
-            </div>
-            <div class="row">
-                <div class="col-4">Spicy Bean Burger................................ 140kr</div>
-                <div class="col-1 border-end border-2 border-dark"></div>
-                <div class="col-1"></div>
-                <div class="col-4">Green Tea................................................. 35kr</div>
-            </div>
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-1">&nbsp;</div>
-                <div class="col-4"></div>
-                <div class="col-4"></div>
-                <div class="col-1">&nbsp;</div>
-            </div>
-            <div class="row">
-                <div class="col-3">&nbsp;</div>
-                <div class="col-4">
-                    <!--form -->
-                        <div class="row g-2 justify-content-center">
-                            <div class="col-4">
-                                <label for="tableNumber" class="col-form-label">Table No.</label>
-                            </div>
-                            <div class="col-3">
-                                <input type="number" min="1" id="tableId" class="form-control">
-                            </div>
-                        </div>
-                        <br />
-                        <div style="margin-right: 50px; font-size: 18pt;" class="row justify-content-center">Total Amount:<span class id="amount">0</span>
-
-                        </div>
-                        <br />
-                        <div class="mt-5" style="text-align: center;">
-                        <button id="placeOrder" class="btn" data-bs-toggle="modal" data-bs-target="#orderModalWindow"><i class="bi bi-basket2-fill"></i>&nbsp;Place Order</button>
-                    <!--/form-->
-                </div>
-                <div class="col-3"></div>
-            </div>
+  <!-- header -->
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" style="max-width:70%;" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon bg-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ticket.html">Tickets</a>
+            </li>
+          </ul>
         </div>
-        <!--Modal window for displaying the order-->
-        <div class="modal fade" id="orderModalWindow" tabindex="-1" aria-labelledby="modalCenterTitle"
-          style="display: none;" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="modalCenterTitle">Place order</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    </nav>
+  </div>
+  <!-- Menu content -->
+  <div>
+    <br />
+    <div class="menuborder"><span class="menutitle">Our Magic Menu</span></div>
+    <div class="sign_menu">
+      <div class="inner_menu"><img src="./images/bowli.png" alt="bowl"></div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div id="menu" class="fw-lighter">
+      <div class="row">
+        <div class="col-4 border-bottom border-2 border-dark">Starters</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4 border-bottom border-2 border-dark">Main courses</div>
+      </div>
+      <div class="row">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-4 item">Crispy Chicken Wings...............<span class="price">200</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4 item">Mushrooms with Vegetables.....<span class="price">320</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Garlic Bread With Cheese........<span class="price">140</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Chicken Sauce with garlic..........<span class="price">350</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Warm Goats Cheese ................<span class="price">148</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Chicken/Lamb with Rice.............<span class="price">199</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Fresh Potted Crab......................<span class="price">145</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Baked Steak with Pasta...............<span class="price">305</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Crispy Spring Roll......................<span class="price"> 245</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Chicken in Lemon Sauce............<span class="price">280</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Sandwich Of The Day................<span class="price">100</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Slowly Cooked Pork Belly...........<span class="price">350</span>kr<span class="addsign"><i
+              class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Oriental Spare Ribs....................<span class="price">125</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Student Signature........................<span class="price">350</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-4 border-bottom border-2 border-dark">Veggies</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4 border-bottom border-2 border-dark">Drinks</div>
+      </div>
+      <div class="row">
+        <div class="col-4">&nbsp;</div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-4">Spicy Bean Burger.....................<span class="price">175</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">IPA Beer.............................................<span class="price">80</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Pasta Salad.................................<span class="price">135</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Soda Drinks......................................<span class="price">40</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Lasagne......................................<span class="price">180</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Fresh Juice........................................<span class="price">90</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Tofu Salad................................. <span class="price">200</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Non-alcholic....................................<span class="price">50</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Pepper Potatoes...................... <span class="price">175</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Lemonade........................................<span class="price">90</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Olivas Rellenas......................... <span class="price">120</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Cappucino.......................................<span class="price">45</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-4">Spicy Bean Burger.....................<span class="price">140</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+        <div class="col-1 border-end border-2 border-dark"></div>
+        <div class="col-1"></div>
+        <div class="col-4">Green Tea.........................................<span class="price">35</span>kr<span
+            class="addsign"><i class="bi bi-plus-lg"></i></span><span class="qty">0</span><span class="subtract"><i
+              class="bi bi-dash-lg"></i></span></div>
+      </div>
+      <div class="row">
+        <div class="col-1">&nbsp;</div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-1">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-1">&nbsp;</div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-1">&nbsp;</div>
+      </div>
+      <div class="row">
+        <div class="col-3">&nbsp;</div>
+        <div class="col-4">
+          <!--form -->
+          <div class="row g-2 justify-content-center">
+            <div class="col-4">
+              <label for="tableNumber" class="col-form-label">Table No.</label>
+            </div>
+            <div class="col-3">
+              <input type="number" min="1" id="tableId" class="form-control">
+            </div>
+          </div>
+          <br />
+          <div style="margin-right: 50px; font-size: 18pt;" class="row justify-content-center" id="amount">Total
+            Amount: 0 Kr
+          </div>
+          <br />
+          <div class="mt-5" style="text-align: center;">
+            <button id="placeOrder" class="btn" data-bs-toggle="modal" data-bs-target="#orderModalWindow"><i
+                class="bi bi-basket2-fill"></i>&nbsp;Place Order</button>
+            <!--/form-->
+          </div>
+          <div class="col-3"></div>
+        </div>
+      </div>
+      <!--Modal window for displaying the order-->
+      <div class="modal fade" id="orderModalWindow" tabindex="-1" aria-labelledby="modalCenterTitle"
+        style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalCenterTitle">Place order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="modal-order-container" class="container-fluid">
               </div>
-              <div class="modal-body">
-                <div id="modal-order-container" class="container-fluid">
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-warning">Confirm order</button>
-              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-warning">Confirm order</button>
             </div>
           </div>
         </div>
+      </div>
     </div>
-    <br />
-    <br />
-
-
-    <!-- Footer -->
-          <!-- Footer -->
-
-        </div>
-        <div>
-          <footer id="footer" class="text-center text-lg-start bg-light text-muted">
-            <!-- Section: Social media -->
-            <section
-              class="d-flex justify-content-center justify-content-lg-between px-4 py-lg-3 py-md-2 py-sm-1 border-bottom">
-              <!-- Left -->
-              <div class="me-5 d-none d-lg-block py-1">
-                <span>Get connected with us on social networks:</span>
+    <div>
+      <footer id="footer" class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section
+          class="d-flex justify-content-center justify-content-lg-between px-4 py-lg-3 py-md-2 py-sm-1 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block py-1">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+          <!-- Right -->
+          <div>
+            <a href="https://www.instagram.com/visitstockholm/" class="me-4 text-reset icon">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/visitstockholm/" class="me-4 text-reset icon">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+            <a href="https://www.visitstockholm.com/travel-info/handy-apps/" class="me-4 text-reset icon">
+              <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="https://twitter.com/visitstockholm" class="me-4 text-reset icon">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="" style="background-color: rgba(0, 0, 0, 0.05);">
+          <div class="container text-center text-md-start">
+            <!-- Grid row -->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
+                <!-- logo -->
+                <a href="index.html#navbar"><img src="./images/logo.png" style="max-width:100%;"></a>
               </div>
-              <!-- Left -->
-              <!-- Right -->
-              <div>
-                <a href="https://www.instagram.com/visitstockholm/" class="me-4 text-reset icon">
-                  <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://www.facebook.com/visitstockholm/" class="me-4 text-reset icon">
-                  <i class="fa fa-facebook-f"></i>
-                </a>
-                <a href="https://www.visitstockholm.com/travel-info/handy-apps/" class="me-4 text-reset icon">
-                  <i class="fa fa-google-plus"></i>
-                </a>
-                <a href="https://twitter.com/visitstockholm" class="me-4 text-reset icon">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-              <!-- Right -->
-            </section>
-            <!-- Section: Social media -->
-    
-            <!-- Section: Links  -->
-            <section class="" style="background-color: rgba(0, 0, 0, 0.05);">
-              <div class="container text-center text-md-start">
-                <!-- Grid row -->
-                <div class="row">
-                  <!-- Grid column -->
-                  <div class="col-md-4 col-lg-4 col-xl-4 mx-auto">
-                    <!-- logo -->
-                    <a href="index.html#navbar"><img src="./images/logo.png" style="max-width:100%;"></a>
-                  </div>
-    
-                  <!-- Grid column -->
-                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">
-                      <a href="index.html#navbar" class="text-secondary text-capitalize">Home</a>
-                    </h6>
-                  </div>
-                  <!-- Grid column -->
-    
-                  <!-- Grid column -->
-                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">
-                      <a href="index.html#about" class="text-secondary text-capitalize">About</a>
-                    </h6>
-                  </div>
-                  <!-- Grid column -->
-                  <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold">
-                      <a href="menu.html" class="text-secondary text-capitalize">Menu</a>
-                    </h6>
-                  </div>
-                  <!-- Grid column -->
-                  <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
-                    <!-- Links -->
-                    <h6 class="text-uppercase fw-bold ">
-                      <a href="#footer" class="text-secondary text-capitalize ">Contact</a>
-                    </h6>
-                    <p class="my-md-1"><i class="fa fa-phone me-3"></i> + 46 73 123 45 67</p>
-                    <p class="my-md-1">
-                      <i class="fa fa-envelope me-3"></i>
-                      info@foodwithmagic.se
-                    </p>
-                    <p class="my-md-1" onclick=showMap()>
-                      <i class="fa fa-home me-3"></i>
-                      <a style="text-decoration: none;" href="index.html#map"><i class="fa fa-map-marker"></i>
-                      </a>
-                      Årstaängsvägen 9 Stockholm
-                    </p>
-    
-                  </div>
-                  <!-- Grid column -->
-                </div>
-                <!-- Grid row -->
-              </div>
-            </section>
-            <!-- Section: Links  -->
-            <!-- Copyright -->
-            <div class="text-center p-3">© 2022 Copyright</div>
-            <!-- Copyright -->
-          </footer>
 
+              <!-- Grid column -->
+              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">
+                  <a href="index.html#navbar" class="text-secondary text-capitalize">Home</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">
+                  <a href="index.html#about" class="text-secondary text-capitalize">About</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-1 col-lg-1 col-xl-1 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold">
+                  <a href="menu.html" class="text-secondary text-capitalize">Menu</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+              <div class="col-md-5 col-lg-3 col-xl-3 mx-auto mt-sm-2 mt-md-2 mt-lg-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold ">
+                  <a href="#footer" class="text-secondary text-capitalize ">Contact</a>
+                </h6>
+                <p class="my-md-1"><i class="fa fa-phone me-3"></i> + 46 73 123 45 67</p>
+                <p class="my-md-1">
+                  <i class="fa fa-envelope me-3"></i>
+                  info@foodwithmagic.se
+                </p>
+                <p class="my-md-1" onclick=showMap()>
+                  <i class="fa fa-home me-3"></i>
+                  <a style="text-decoration: none;" href="index.html#map"><i class="fa fa-map-marker"></i>
+                  </a>
+                  Årstaängsvägen 9 Stockholm
+                </p>
+
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center p-3">© 2022 Copyright</div>
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <div>
 </body>
 
 </html>
