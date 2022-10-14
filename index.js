@@ -68,15 +68,15 @@ $(document).ready(function () {
         let coldiv = document.createElement("div");
 
         if (i == 0) {
-          coldiv.className = "col-3";
+          coldiv.className = "col-3 text-start";
           coldiv.innerText = qty + " x " + price + ":-";
         }
         if (i == 1) {
-          coldiv.className = "col-7";
+          coldiv.className = "col-7 text-start";
           coldiv.innerText =  $(this).text().slice(0, 30);
         }
         if (i == 2) {
-          coldiv.className = "col-2";
+          coldiv.className = "col-2 text-end";
           coldiv.innerText = qty * price + ":-";
         }
         
@@ -102,7 +102,7 @@ $(document).ready(function () {
         coldiv.innerText = "Total Amount";
       }
       if (i == 2) {
-        coldiv.className = "col-2";
+        coldiv.className = "col-2 text-end";
         coldiv.innerText = sum + ":-";
       }
       sumdiv.appendChild(coldiv);
