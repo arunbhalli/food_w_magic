@@ -201,7 +201,7 @@
             <div class="row">
                 <div class="col-3">&nbsp;</div>
                 <div class="col-4">
-                    <form>
+                    <!--form -->
                         <div class="row g-2 justify-content-center">
                             <div class="col-4">
                                 <label for="tableNumber" class="col-form-label">Table No.</label>
@@ -216,11 +216,31 @@
                         </div>
                         <br />
                         <div class="mt-5" style="text-align: center;">
-          <button class="btn"><i class="bi bi-basket2-fill"></i>&nbsp;Place Order</button>
-                    </form>
+                        <button id="placeOrder" class="btn" data-bs-toggle="modal" data-bs-target="#orderModalWindow"><i class="bi bi-basket2-fill"></i>&nbsp;Place Order</button>
+                    <!--/form-->
                 </div>
                 <div class="col-3"></div>
             </div>
+        </div>
+        <!--Modal window for displaying the order-->
+        <div class="modal fade" id="orderModalWindow" tabindex="-1" aria-labelledby="modalCenterTitle"
+          style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalCenterTitle">Place order</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div id="modal-order-container" class="container-fluid">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning">Confirm order</button>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
     <br />
