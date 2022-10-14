@@ -48,6 +48,70 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
+  $("#placeOrder").on("click", function () {
+
+    let sum = 0;
+
+    let container = $("#modal-order-container").text("");
+
+    $("#menu .active-item").each(function () {
+
+      let rowdiv = document.createElement("div")
+      rowdiv.className = "row";
+
+      let qty = Number($(this).find('.qty').text());
+      let price = Number($(this).find('.price').text());
+      sum = sum + price * qty;
+
+      for (let i = 0; i < 3; i++) {
+
+        let coldiv = document.createElement("div");
+
+        if (i == 0) {
+          coldiv.className = "col-3";
+          coldiv.innerText = qty + " x " + price + ":-";
+        }
+        if (i == 1) {
+          coldiv.className = "col-7";
+          coldiv.innerText =  $(this).text().slice(0, 30);
+        }
+        if (i == 2) {
+          coldiv.className = "col-2";
+          coldiv.innerText = qty * price + ":-";
+        }
+        
+        rowdiv.appendChild(coldiv);
+      }
+
+      container.append(rowdiv);
+
+    });
+
+    //add the summary div
+    let sumdiv = document.createElement("div");
+    sumdiv.className = "row";
+    container.append(document.createElement("hr"));
+
+    for (let i = 0; i < 3; i++) {
+      let coldiv = document.createElement("div");
+      if (i == 0) {
+        coldiv.className = "col-3";
+      }
+      if (i == 1) {
+        coldiv.className = "col-7";
+        coldiv.innerText = "Total Amount";
+      }
+      if (i == 2) {
+        coldiv.className = "col-2";
+        coldiv.innerText = sum + ":-";
+      }
+      sumdiv.appendChild(coldiv);
+    }
+
+    container.append(sumdiv);
+
+  });
+
   /************Calculate Menu START****************/
   $("#menu .addsign ").click(function () {
     $(this).parent().addClass('active-item');
