@@ -185,6 +185,7 @@ a.icon {
     height: 1000px;
   }
 }
+/*media for screen 821 above screen*/
 @media only screen and (min-width: 821px) and (max-width: 1180px) {
   .qty {
     text-align: center;
