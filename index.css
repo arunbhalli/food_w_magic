@@ -137,7 +137,7 @@ a.icon {
   display: flex;
   background-color: #fedc01;
   height: 700px;
-  position: relative;
+  position: absolute;
   width: 160px;
   z-index: -1;
   border-radius: 15px;
