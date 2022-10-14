@@ -160,7 +160,7 @@ a.icon {
 .addsign {
   font-weight: bold;
 }
-.fw-lighter {
+.menuData {
   margin-left: 15%;
   margin-right: 20%;
 }
@@ -177,7 +177,7 @@ a.icon {
   #titles {
     text-align: center;
   }
-  .fw-lighter {
+  .menuData {
     margin-left: 2%;
     margin-right: 0%;
   }
@@ -195,7 +195,7 @@ a.icon {
   #titles {
     text-align: center;
   }
-  .fw-lighter {
+  .menuData {
     margin-left: 2%;
     margin-right: 0%;
   }
