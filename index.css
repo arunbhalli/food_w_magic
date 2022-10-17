@@ -136,14 +136,14 @@ a.icon {
 .sign_menu {
   display: flex;
   background-color: #fedc01;
-  height: 700px;
+  height: 1200px;
   position: absolute;
   width: 160px;
   z-index: -1;
   border-radius: 15px;
   float: right;
-  right: 15px;
-  top: 100px;
+  right: -7px;
+  margin-top: -100px;
 }
 
 .inner_menu {
