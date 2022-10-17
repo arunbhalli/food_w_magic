@@ -160,7 +160,7 @@ a.icon {
 .addsign {
   font-weight: bold;
 }
-.fw-lighter {
+.menuData {
   margin-left: 15%;
   margin-right: 20%;
 }
@@ -177,7 +177,7 @@ a.icon {
   #titles {
     text-align: center;
   }
-  .fw-lighter {
+  .menuData {
     margin-left: 2%;
     margin-right: 0%;
   }
@@ -185,6 +185,7 @@ a.icon {
     height: 1000px;
   }
 }
+/*media for screen 821 above screen*/
 @media only screen and (min-width: 821px) and (max-width: 1180px) {
   .qty {
     text-align: center;
@@ -195,7 +196,7 @@ a.icon {
   #titles {
     text-align: center;
   }
-  .fw-lighter {
+  .menuData {
     margin-left: 2%;
     margin-right: 0%;
   }
